@@ -93,7 +93,7 @@ selectModo.addEventListener("change", function () {
   }
 });
 
-form.addEventListener("submit", function (evento) {
+function iniciarJogoConfigurado(evento) {
   evento.preventDefault(); // pra pagina nao recarregar
 
   nome1 = inputNome1.value.trim();
@@ -118,7 +118,7 @@ form.addEventListener("submit", function (evento) {
   quemComeca = "X";
   salvarDados();
   mostrarJogo();
-});
+}
 
 // ---------- o jogo ----------
 
